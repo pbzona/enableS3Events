@@ -17,6 +17,7 @@ exports.handler = (event, context) => {
   const lambdaFunction = event.ResourceProperties.lambdaFunction;
 
   const params = {
+    asdf
     Bucket: getBucketName(bucketString),
     NotificationConfiguration: {
       LambdaFunctionConfigurations: [{
