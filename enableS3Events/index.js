@@ -32,7 +32,7 @@ exports.handler = (event, context) => {
       console.log(`${responseData.Error}:\n ${err}`);
     }
     responseStatus = 'SUCCESS';
-    responseData = JSON.stringify(res);
+    responseData = data;
 
     sendResponse(event, context, responseStatus, responseData);
   });
